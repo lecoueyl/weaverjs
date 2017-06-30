@@ -1,0 +1,9 @@
+//- JavaScript
+case env
+  when "development"
+    script(src="./vendors/bundle.js")
+    script(src="./scripts/main.js")
+  when "staging"
+  when "development"
+    script(src="./vendors/bundle.min.js?" + Date.now())
+    script(src="./scripts/main.min.js?" + Date.now())

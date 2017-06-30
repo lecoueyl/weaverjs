@@ -1,0 +1,54 @@
+{
+  "name": "weaverjs",
+  "title": "Weaverjs",
+  "description": "Spin static web page straightaway, Use the best of nodejs to build the sharpest html, css and javascript",
+  "version": "0.0.0",
+  "homepage": "http://www.domain.com",
+  "author": {
+    "name": "Company",
+    "url": "http://www.company.com"
+  },
+  "contributors": [
+    {
+      "name": "Name",
+      "email": "alias@company.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:lecoueyl/weaverjs.git"
+  },
+  "scripts": {
+    "gulp": "./node_modules/gulp/bin/gulp.js",
+    "build": "./node_modules/gulp/bin/gulp.js build",
+    "dev": "NODE_ENV='development' ./node_modules/gulp/bin/gulp.js build",
+    "stg": "NODE_ENV='staging' ./node_modules/gulp/bin/gulp.js build",
+    "prd": "NODE_ENV='production' ./node_modules/gulp/bin/gulp.js build"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^7.1.1",
+    "babel-preset-latest": "^6.24.1",
+    "browser-sync": "^2.18.12",
+    "del": "^3.0.0",
+    "eslint": "^4.1.1",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.6.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-changed": "^3.1.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-eslint": "^4.0.0",
+    "gulp-include": "^2.3.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "iotacss": "^1.1.1",
+    "jquery": "^3.2.1",
+    "run-sequence": "^1.2.2"
+  }
+}

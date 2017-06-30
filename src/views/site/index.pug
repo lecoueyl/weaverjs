@@ -1,0 +1,11 @@
+extends /extends/layout
+include /mixins/sample
+
+block variables
+  - var title = "Weaverjs";
+  - var description = "Web Starter Kit";
+  - var keywords = "HTML,CSS,JavaScrip";
+
+block content
+  h1 Weaverjs
+  +sample("I'm a sample mixin with class modifier")(class="c-sample--modifier")

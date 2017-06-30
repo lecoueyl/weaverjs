@@ -1,0 +1,23 @@
+meta(charset="utf-8")
+meta(http-equiv="X-UA-Compatible", content="IE=edge")
+meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+
+title #{title}
+meta(name="description", content=description)
+meta(name="keywords", content=keywords)
+
+//- Open Graph
+meta(property='og:title', content=title)
+meta(property='og:description', content=description)
+meta(property='og:url', content='https://github.com/lecoueyl/weaverjs')
+meta(property='og:image', content='./images/og_image.jpg')
+meta(property='og:type', content='website')
+meta(property='og:site_name', content='Spin static web page straightaway')
+
+//- CSS
+case env
+  when "development"
+    link(href="./styles/main.css", rel="stylesheet")
+  when "staging"
+  when "production"
+    link(href="./styles/main.min.css?" + Date.now(), rel="stylesheet")
