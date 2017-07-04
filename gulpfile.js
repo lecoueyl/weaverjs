@@ -349,14 +349,14 @@ gulp.task('views', () => gulp
 );
 
 /**
- * Push production build into gh-pages branche
+ * Push production build into gh-pages branch
  * -----------------------------------------------------------------------------
  */
 
 gulp.task('githubPages', () => gulp
   // Select source
   .src(`${path.dist}/**/*`)
-  // Deploy on gh-branch
+  // Push on gh-pages branch
   .pipe(ghPages({
     force: true,
   })),

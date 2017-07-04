@@ -90,7 +90,7 @@ Generate a fresh build of your project. Task will run several individual tasks o
 
 ### Environments
 
-You can specify which environment you want to build. If you do not pass `env` as an option, then `dev` will be used by default.
+You can specify which environment you want to build. Development environment is used by default when building without option.
 
 #### Development
 
@@ -123,7 +123,7 @@ npm run gulp server
 
 ### Github Pages
 
-If you want to host your site on [Github Pages](https://pages.github.com), you can deploy directly a production version on the `gh-pages` branche. Therefore, you have to already commit once your project on a Github repository.
+If you want to host your site on [Github Pages](https://pages.github.com), you can deploy directly a production version on the `gh-pages` branch. Therefore, you have to already commit once your project on a Github repository.
 
 ```
 npm run github
