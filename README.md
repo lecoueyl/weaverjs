@@ -1,38 +1,45 @@
 # Weaverjs | Web starter kit
 
-Weaverjs is an opinionated boilerplate for web development based on [Gulp](http://gulpjs.com/), [Node](https://nodejs.org/), [NPM](https://www.npmjs.com/), [Sass](http://sass-lang.com/) and [Pug](https://pugjs.org/).
+<p align="center">
+  <img src="https://lecoueyl.github.io/weaverjs.com/images/favicon/favicon-96x96.png" width="48">
+</p>
 
-*Note: Weaverjs is simply a guideline and it doesn't solve everything. It is up to you to modify whatever necessary to achieve your project goals and dreams.*
+[Weaverjs](https://github.com/lecoueyl/weaverjs.com) is an opinionated boilerplate for web development based on [Gulp](http://gulpjs.com/), [Node](https://nodejs.org/), [NPM](https://www.npmjs.com/), [Sass](http://sass-lang.com/) and [Pug](https://pugjs.org/).
+
+It helps you by automating website builds and let you focus on writing only reusable modules for html, css and javascript.
+You can visit the [repository](https://github.com/lecoueyl/weaverjs) of Weaverjs's homepage to have an usage example.
+
+*Note: Weaverjs is a guideline and it doesn't solve everything. It is up to you to modify whatever necessary to achieve your project goals and dreams.*
 
 ## Table of Contents
 
-1. [Quickstart](#quickstart)
-1. [Directory Layout](#directory-layout)
-1. [Build](#build)
-    1. [Environments](#environments)
-        1. [Development](#development)
-        1. [Stage](#stage)
-        1. [Production](#production)
-1. [Server](#server)
-    1. [Local URLs](#local-urls)
-    1. [Options](#options)
-1. [Deploy](#deploy)
-    1. [Github Pages](#github-pages)
-1. [Assets](#assets)
-    1. [Fonts](#fonts)
-    1. [Images](#images)
-    1. [Media](#media)
-    1. [Miscellaneous](#miscellaneous)
-    1. [Vendors](#vendors)
-      1. [Jquery example](#jquery-example)
-1. [Scripts](#scripts)
-1. [Styles](#styles)
-    1. [iotaCSS](#iotacss)
-1. [Views](#views)
-    1. [Pug Structure](#pug-structure)
-    1. [Environment Variables](#environment-variables)
-1. [Contributing](#contributing)
-1. [Inspiration](#inspiration)
+- [Quickstart](#quickstart)
+- [Directory Layout](#directory-layout)
+- [Build](#build)
+    - [Environments](#environments)
+        - [Development](#development)
+        - [Stage](#stage)
+        - [Production](#production)
+- [Server](#server)
+    - [Local URLs](#local-urls)
+    - [Options](#options)
+- [Deploy](#deploy)
+    - [Github Pages](#github-pages)
+- [Assets](#assets)
+    - [Fonts](#fonts)
+    - [Images](#images)
+    - [Media](#media)
+    - [Miscellaneous](#miscellaneous)
+    - [Vendors](#vendors)
+      - [Jquery example](#jquery-example)
+- [Scripts](#scripts)
+- [Styles](#styles)
+    - [iotaCSS](#iotacss)
+- [Views](#views)
+    - [Pug Structure](#pug-structure)
+    - [Environment Variables](#environment-variables)
+- [Contributing](#contributing)
+- [Inspiration](#inspiration)
 
 ## Quickstart
 
