@@ -7,7 +7,7 @@
 [Weaverjs](https://lecoueyl.github.io/weaverjs.com) is an opinionated boilerplate for web development based on [Gulp](http://gulpjs.com/), [Node](https://nodejs.org/), [NPM](https://www.npmjs.com/), [Sass](http://sass-lang.com/) and [Pug](https://pugjs.org/).
 
 It helps you by automating website builds and let you focus on writing only reusable modules for html, css and javascript.
-You can visit the [repository](https://github.com/lecoueyl/weaverjs) of Weaverjs's homepage to have an usage example.
+You can visit the [repository](https://github.com/lecoueyl/weaverjs.com) of Weaverjs's homepage to have an usage example.
 
 *Note: Weaverjs is a guideline and it doesn't solve everything. It is up to you to modify whatever necessary to achieve your project goals and dreams.*
 
@@ -143,7 +143,7 @@ npm run github
 
 ### Options
 
-You can modify port, proxy, and many other settings in `./gulpfile.babel.js`. For more information about BrowserSync go to [http://www.browsersync.io/](http://www.browsersync.io/).
+You can modify port, proxy, and many other settings in `./gulpfile.babel.js`. For more information about BrowserSync go to [http://www.browsersync.io](http://www.browsersync.io).
 
 ## Assets
 
