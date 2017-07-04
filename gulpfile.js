@@ -9,6 +9,7 @@ const bs = require('browser-sync');
 const changed = require('gulp-changed');
 const del = require('del');
 const eslint = require('gulp-eslint');
+const ghPages = require('gulp-gh-pages');
 const gulp = require('gulp');
 const gutil = require('gulp-util');
 const include = require('gulp-include');
@@ -16,6 +17,7 @@ const nano = require('gulp-cssnano');
 const plumber = require('gulp-plumber');
 const postcss = require('gulp-postcss');
 const pug = require('gulp-pug');
+const readlineSync = require('readline-sync');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass');
 const sequence = require('run-sequence');
@@ -96,6 +98,21 @@ gulp.task('server', () => {
   gulp.watch(`${path.src}/views/**/*.pug`, ['views']);
   // Watch for build changes and reload browser
   bs.watch(`${path.dist}/**/*`).on('change', bs.reload);
+});
+
+/**
+ * Deploy github pages
+ * -----------------------------------------------------------------------------
+ */
+
+gulp.task('deployGithubPages', (callback) => {
+  if (readlineSync.keyInYN('Do you want to push on Github Pages?')) {
+    sequence(
+      ['build'],
+      ['githubPages'],
+      callback,
+    );
+  }
 });
 
 /**
@@ -321,7 +338,7 @@ gulp.task('views', () => gulp
   .src(`${path.src}/views/site/**/*.pug`)
   // Compile Pug
   .pipe(pug({
-    basedir: `${__dirname}/${path.src}/views`,
+    basedir: `${path.src}/views`,
     pretty: (options.env === 'development'),
     data: {
       env: options.env,
@@ -329,4 +346,18 @@ gulp.task('views', () => gulp
   }))
   // Save files
   .pipe(gulp.dest(path.dist)),
+);
+
+/**
+ * Push production build into gh-pages branche
+ * -----------------------------------------------------------------------------
+ */
+
+gulp.task('githubPages', () => gulp
+  // Select source
+  .src(`${path.dist}/**/*`)
+  // Deploy on gh-branch
+  .pipe(ghPages({
+    force: true,
+  })),
 );

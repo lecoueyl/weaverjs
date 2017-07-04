@@ -16,6 +16,8 @@ Weaverjs is an opinionated boilerplate for web development based on [Gulp](http:
 1. [Server](#server)
     1. [Local URLs](#local-urls)
     1. [Options](#options)
+1. [Deploy](#deploy)
+    1. [Github Pages](#github-pages)
 1. [Assets](#assets)
     1. [Fonts](#fonts)
     1. [Images](#images)
@@ -116,6 +118,17 @@ Start a local dev server with. Additionally, gulp will watch for any changes to 
 npm run gulp server
 ```
 
+## Deploy
+
+
+### Github Pages
+
+If you want to host your site on [Github Pages](https://pages.github.com), you can deploy directly a production version on the `gh-pages` branche. Therefore, you have to already commit once your project on a Github repository.
+
+```
+npm run github
+```
+
 ### Local URLs
 
 * Local - http://localhost:3000
@@ -176,20 +189,22 @@ Bundle vendor files to `./dist/vendors`. You can install new client-side vendors
 #### Jquery example
 
 Add jquery package in `package.json`
-```
-...
-  "jquery": "^3.2.1"
-...
+```javascript
+"dependencies": {
+  ...
+  "jquery": "^x.x.x",
+  ...
+}
 
 ```
 
 Reference it for development in `./src/vendors/bundle.js`
-```
+```javascript
 // =include jquery/dist/jquery.js
 ```
 
 And for minified version in  `./src/vendors/bundle.min.js`
-```
+```javascript
 // =include jquery/dist/jquery.min.js
 ```
 
