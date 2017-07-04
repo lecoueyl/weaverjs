@@ -4,7 +4,7 @@
   <img src="https://lecoueyl.github.io/weaverjs.com/images/favicon/favicon-96x96.png" width="48">
 </p>
 
-[Weaverjs](https://github.com/lecoueyl/weaverjs.com) is an opinionated boilerplate for web development based on [Gulp](http://gulpjs.com/), [Node](https://nodejs.org/), [NPM](https://www.npmjs.com/), [Sass](http://sass-lang.com/) and [Pug](https://pugjs.org/).
+[Weaverjs](https://lecoueyl.github.io/weaverjs.com) is an opinionated boilerplate for web development based on [Gulp](http://gulpjs.com/), [Node](https://nodejs.org/), [NPM](https://www.npmjs.com/), [Sass](http://sass-lang.com/) and [Pug](https://pugjs.org/).
 
 It helps you by automating website builds and let you focus on writing only reusable modules for html, css and javascript.
 You can visit the [repository](https://github.com/lecoueyl/weaverjs) of Weaverjs's homepage to have an usage example.
