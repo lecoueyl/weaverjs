@@ -106,7 +106,7 @@ gulp.task('server', () => {
  */
 
 gulp.task('deployGithubPages', (callback) => {
-  if (readlineSync.keyInYN('Do you want to push on Github Pages?')) {
+  if (readlineSync.keyInYN('Do you want to push the production build on Github Pages?')) {
     sequence(
       ['build'],
       ['githubPages'],

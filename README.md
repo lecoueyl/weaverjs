@@ -6,10 +6,10 @@
 
 [Weaverjs](https://lecoueyl.github.io/weaverjs.com) is an opinionated boilerplate for web development based on [Gulp](http://gulpjs.com/), [Node](https://nodejs.org/), [NPM](https://www.npmjs.com/), [Sass](http://sass-lang.com/) and [Pug](https://pugjs.org/).
 
-It helps you by automating website builds and let you focus on writing only reusable modules for html, css and javascript.
+It helps you by automating website builds and lets you focus on writing only reusable modules for html, css and javascript.
 You can visit the [repository](https://github.com/lecoueyl/weaverjs.com) of Weaverjs's homepage to have an usage example.
 
-*Note: Weaverjs is a guideline and it doesn't solve everything. It is up to you to modify whatever necessary to achieve your project goals and dreams.*
+*Note: Weaverjs is a guideline and it doesn't solve everything. It is up to you to modify whatever is necessary to achieve your project goals and dreams.*
 
 ## Table of Contents
 
@@ -47,7 +47,7 @@ You can visit the [repository](https://github.com/lecoueyl/weaverjs.com) of Weav
 npm cache clear && npm i && npm run gulp
 ```
 
-*Note: Before you can install packages, you will need to install [Node](https://nodejs.org/) and [NPM](https://www.npmjs.com/). It 's recommanded to use [nodenv](https://github.com/nodenv/nodenv) to manage them*
+*Note: In order to install packages, you will need to install [Node](https://nodejs.org/) and [NPM](https://www.npmjs.com/). It’s recommended to use [nodenv](https://github.com/nodenv/nodenv) to manage them*
 
 ## Directory Layout
 
@@ -75,7 +75,7 @@ npm cache clear && npm i && npm run gulp
 │   │   └── main.scss             # Global scss style file
 │   ├── svg/                      # Asset folder for svg files
 │   ├── vendors/                  # Vendors Javascripts files (jquery, ...)
-│   │   ├── bundle.js             # Not minimized vendors Javascripts files (for development)
+│   │   ├── bundle.js             # Non minimized vendors Javascripts files (for development)
 │   │   └── bundle.min.js         # Minimized vendors Javascripts files
 │   └── views/                    # Pug included files
 │       ├── extends/              # Pug view files
@@ -97,7 +97,7 @@ Generate a fresh build of your project. Task will run several individual tasks o
 
 ### Environments
 
-You can specify which environment you want to build. Development environment is used by default when building without option.
+You can specify which environment you want to build. Development environment is used by default when building with no option.
 
 #### Development
 
@@ -119,7 +119,7 @@ npm run prd
 
 ## Server
 
-Start a local dev server with. Additionally, gulp will watch for any changes to files and reload browser while server is running.
+Start a local dev server. Additionally, gulp will watch for any change on files and reload the browser while the server is running.
 
 ```
 npm run gulp server
@@ -130,7 +130,7 @@ npm run gulp server
 
 ### Github Pages
 
-If you want to host your site on [Github Pages](https://pages.github.com), you can deploy directly a production version on the `gh-pages` branch. Therefore, you have to already commit once your project on a Github repository.
+If you want to host your site on [Github Pages](https://pages.github.com), you can deploy directly a production version on the `gh-pages` branch. Therefore, you have to commit at least once your project on a Github repository.
 
 ```
 npm run github
@@ -179,7 +179,7 @@ Copy media files to `./dist/media`.
 
 ### Miscellaneous
 
-Copy miscellaneous files, such as `.htaccess` or `robots.txt`, to the root of `./dist`. If your project require custom settings per environment, then you can save individual files into appropriate directory within `./src/misc`.
+Copy miscellaneous files, such as `.htaccess` or `robots.txt`, to the root of `./dist`. If your project require custom settings per environment, then you can save individual files into the appropriate directory within `./src/misc`.
 
 ```
 npm run gulp misc
@@ -224,7 +224,7 @@ npm run gulp scripts
 
 Run a series of sub-tasks to generate final JavaScript files.
 
-*Note: Each file on the root of `./src/scripts` will be compiled to its own file in `./dist/scripts`. Each file can have own includes, just like Sass with `@import` functionality. See `./src/scripts/main.js` as an example.*
+*Note: Each file on the root of `./src/scripts` will be compiled into its own file in `./dist/scripts`. Each file can have its own includes, just like Sass with `@import` functionality. See `./src/scripts/main.js` as an example.*
 
 ## Styles
 
@@ -234,7 +234,7 @@ npm run gulp styles
 
 Run a series of sub-tasks to generate final CSS files. See `./gulpfile.babel.js` for reference.
 
-*Note: Each file on the root of `./src/styles` will be compiled to its own file in `./dist/styles`.*
+*Note: Each file on the root of `./src/styles` will be compiled into its own file in `./dist/styles`.*
 
 ### iotaCSS
 
@@ -254,7 +254,7 @@ Weaverjs follows an opinionated directory structure. To learn more about Pug go 
 
 ### Environment Variables
 
-Every Pug file has access to global `env` variable. You can use it to conditionally load unminified/minified assets. See `./src/views/includes/head.pug` as an example.
+Every Pug file has access to the global `env` variable. You can use it to conditionally load unminified/minified assets. See `./src/views/includes/head.pug` as an example.
 
 ### Contributing
 
