@@ -1,5 +1,11 @@
 # Weaverjs changelog
 
+## [1.0.12](https://github.com/lecoueyl/weaverjs/compare/1.0.11...1.0.12) (13/7/2017)
+
+### Fixes
+
+- Use correct production path for `main.js`
+
 ## [1.0.11](https://github.com/lecoueyl/weaverjs/compare/v1.0.1...1.0.11) (10/7/2017)
 
 ### Fixes
