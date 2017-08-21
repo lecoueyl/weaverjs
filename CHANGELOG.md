@@ -1,5 +1,15 @@
 # Weaverjs changelog
 
+## [1.0.13](https://github.com/lecoueyl/weaverjs/compare/v1.0.12...1.0.13) (10/7/2017)
+
+### Update
+
+```
+gulp-babel  ^6.1.2  →  ^7.0.0
+eslint      ^4.3.0  →  ^4.5.0
+iotacss     ^1.1.1  →  ^1.2.0
+```
+
 ## [1.0.12](https://github.com/lecoueyl/weaverjs/compare/1.0.11...1.0.12) (13/7/2017)
 
 ### Fixes
