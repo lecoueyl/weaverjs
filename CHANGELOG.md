@@ -1,6 +1,6 @@
 # Weaverjs changelog
 
-## [1.0.13](https://github.com/lecoueyl/weaverjs/compare/v1.0.12...1.0.13) (10/7/2017)
+## [1.0.13](https://github.com/lecoueyl/weaverjs/compare/1.0.12...1.0.13) (10/7/2017)
 
 ### Update
 
