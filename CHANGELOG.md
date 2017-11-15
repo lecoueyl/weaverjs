@@ -1,5 +1,18 @@
 # Weaverjs changelog
 
+## [1.1.0](https://github.com/lecoueyl/weaverjs/compare/1.0.13...1.1.0) (15/11/2017)
+
+### Update
+
+```
+ autoprefixer                ^7.1.4  →   ^7.1.6
+ eslint                      ^4.8.0  →   ^4.11.0
+ eslint-config-airbnb-base  ^12.0.1  →   ^12.1.0
+ eslint-plugin-import        ^2.7.0  →   ^2.8.0
+ gulp-changed                ^3.1.0  →   ^3.1.1
+ iotacss                     ^1.3.1  →   ^1.5.0
+```
+
 ## [1.0.13](https://github.com/lecoueyl/weaverjs/compare/1.0.12...1.0.13) (10/7/2017)
 
 ### Update
